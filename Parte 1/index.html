@@ -1,12 +1,147 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Floristería Pétalos</title>
+
   <link rel="stylesheet" href="estilos.css">
 </head>
+
 <body>
- 
+
+  <!-- Encabezado de la página -->
+  <header class="barra">
+
+    <!-- Contenedor que limita el ancho del contenido -->
+    <div class="contenedor">
+
+      <!-- Nombre de la floristería -->
+      <h1 class="marca">Pétalos</h1>
+
+      <!-- Menú de navegación -->
+      <nav>
+        <ul class="menu">
+
+          <!-- Enlace hacia la sección de ramos -->
+          <li><a href="#ramos">Ramos</a></li>
+
+          <!-- Enlace hacia la sección de eventos -->
+          <li><a href="#">Eventos</a></li>
+
+          <!-- Enlace hacia la sección de contacto -->
+          <li><a href="#">Contacto</a></li>
+
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+
+  <!-- Portada de la página -->
+  <section class="portada">
+
+    <!-- Contenedor de la portada -->
+    <div class="contenedor">
+
+      <!-- Título principal de la portada -->
+      <h2>Flores frescas todos los días</h2>
+
+      <!-- Descripción de la floristería -->
+      <p>
+        Cortamos cada mañana en nuestro invernadero de Heredia.
+      </p>
+
+      <!-- Enlace que tendrá apariencia de botón mediante CSS -->
+      <a href="#ramos" class="boton">Ver los ramos</a>
+
+    </div>
+  </section>
+
+
+  <!-- Contenido principal de la página -->
+  <main id="ramos">
+
+    <!-- Sección donde se muestran los ramos -->
+    <section class="ramos">
+
+      <!-- Contenedor que centra el contenido -->
+      <div class="contenedor">
+
+        <!-- Título de la sección -->
+        <h2>Nuestros ramos</h2>
+
+        <!-- Contenedor que organiza las tarjetas -->
+        <div class="grilla">
+
+
+          <!-- Primera tarjeta -->
+          <article class="tarjeta">
+
+            <!-- Nombre del primer ramo -->
+            <h3>Ramo Primavera</h3>
+
+            <!-- Descripción del primer ramo -->
+            <p>
+              Gerberas, astromelias y follaje de temporada.
+            </p>
+
+            <!-- Precio del primer ramo -->
+            <p class="precio">₡12 500</p>
+
+          </article>
+
+
+          <!-- Segunda tarjeta -->
+          <article class="tarjeta">
+
+            <!-- Nombre del segundo ramo -->
+            <h3>Ramo Clásico</h3>
+
+            <!-- Descripción del segundo ramo -->
+            <p>
+              Doce rosas rojas con papel kraft y lazo.
+            </p>
+
+            <!-- Precio del segundo ramo -->
+            <p class="precio">₡18 000</p>
+
+          </article>
+
+
+          <!-- Tercera tarjeta -->
+          <article class="tarjeta">
+
+            <!-- Nombre del tercer ramo -->
+            <h3>Ramo Campestre</h3>
+
+            <!-- Descripción del tercer ramo -->
+            <p>
+              Girasoles, lisianthus y eucalipto.
+            </p>
+
+            <!-- Precio del tercer ramo -->
+            <p class="precio">₡15 200</p>
+
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  <!-- Pie de página -->
+  <footer class="pie">
+
+    <!-- Contenedor del pie de página -->
+    <div class="contenedor">
+
+      <!-- Información de la floristería -->
+      <p>
+        Floristería Pétalos · Heredia, Costa Rica · 2244-1180
+      </p>
+    </div>
+  </footer>
 </body>
 </html>
