@@ -63,3 +63,22 @@ body {
 }
 .boton:hover { background: #24523c; }
 
+.ramos { padding: 2.5rem 0; }
+.ramos h2 { text-align: center; margin: 0 0 1.5rem; }
+ 
+.grilla {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+}
+ 
+.tarjeta {
+  background: #ffffff;
+  border-radius: var(--radio);
+  padding: 1.25rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+.tarjeta h3 { margin: 0 0 0.5rem; }
+.tarjeta p { margin: 0 0 1rem; }
+ 
+.precio { color: var(--verde); font-size: 1.25rem; font-weight: bold; }
