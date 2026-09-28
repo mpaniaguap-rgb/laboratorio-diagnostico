@@ -22,3 +22,25 @@ body {
   margin: 0 auto;
   padding: 0 1rem;
 }
+
+.barra { background: var(--verde); color: #ffffff; padding: 1rem 0; }
+ 
+.barra .contenedor {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+ 
+.marca { font-size: 1.5rem; margin: 0; }
+ 
+.menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 1.25rem;
+}
+.menu a { color: #ffffff; text-decoration: none; }
+.menu a:hover { text-decoration: underline; }
