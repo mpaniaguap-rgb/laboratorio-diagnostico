@@ -82,3 +82,10 @@ body {
 .tarjeta p { margin: 0 0 1rem; }
  
 .precio { color: var(--verde); font-size: 1.25rem; font-weight: bold; }
+
+.pie {
+  background: var(--verde);
+  color: #ffffff;
+  text-align: center;
+  padding: 1.25rem 0;
+}
