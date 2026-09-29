@@ -1,0 +1,105 @@
+/* Clínica Dental Sonrisa — hoja de estilos COMPLETA.
+   No modifique este archivo: su trabajo es ajustar el HTML. */
+
+*, *::before, *::after { box-sizing: border-box; }
+body { margin: 0; }
+
+:root {
+  --azul: #1b6f8c;
+  --azul-oscuro: #12556c;
+  --texto: #24313f;
+  --gris: #f4f7f9;
+  --radio: 10px;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--texto);
+  background: var(--gris);
+  line-height: 1.6;
+}
+
+/* Envoltorio que centra el contenido. Se usa dentro de la barra,
+   del contenido principal y del pie. */
+.envoltorio {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Barra superior */
+.barra-superior { background: var(--azul); color: #ffffff; padding: 1rem 0; }
+.barra-superior .envoltorio {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.logo { font-size: 1.4rem; font-weight: bold; margin: 0; }
+.navegacion { display: flex; list-style: none; margin: 0; padding: 0; gap: 1rem; }
+.enlace-nav { color: #ffffff; text-decoration: none; }
+.enlace-nav:hover { text-decoration: underline; }
+
+/* Título de la página */
+.titulo-pagina {
+  text-align: center;
+  font-size: 1.9rem;
+  margin: 2rem 0 0.25rem;
+}
+.subtitulo { text-align: center; color: #5b6b7a; margin: 0 0 2rem; }
+
+/* Dos columnas: información a un lado, formulario al otro */
+.columnas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.tarjeta-info {
+  background: #ffffff;
+  border-radius: var(--radio);
+  padding: 1.25rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,.08);
+}
+.tarjeta-info h3 { margin: 0 0 0.75rem; }
+.dato { margin: 0 0 0.5rem; }
+.destacado { color: var(--azul); font-weight: bold; }
+
+/* Formulario */
+.formulario {
+  background: #ffffff;
+  border-radius: var(--radio);
+  padding: 1.25rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,.08);
+}
+.campo { display: block; margin-bottom: 1rem; }
+.etiqueta { display: block; font-weight: bold; margin-bottom: 0.25rem; }
+.entrada {
+  width: 100%;
+  padding: 0.6rem;
+  border: 1px solid #c9d4dd;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+.boton-enviar {
+  width: 100%;
+  background: var(--azul);
+  color: #ffffff;
+  border: 0;
+  padding: 0.75rem;
+  border-radius: var(--radio);
+  font-size: 1rem;
+  cursor: pointer;
+}
+.boton-enviar:hover { background: var(--azul-oscuro); }
+
+/* Pie */
+.pie-pagina {
+  background: var(--azul);
+  color: #ffffff;
+  text-align: center;
+  padding: 1.25rem 0;
+}
